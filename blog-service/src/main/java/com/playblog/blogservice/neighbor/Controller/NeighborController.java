@@ -52,7 +52,7 @@ public class NeighborController {
 
         return ResponseEntity.ok(result);
     }
-
+    // 나에게 이웃 요청한(나를 추가)
     @GetMapping("/my-following/received")
     public ResponseEntity<List<MyAddedToMeNeighborDto>> getMyReceivedNeighbors(
             @AuthenticationPrincipal String userIdStr
