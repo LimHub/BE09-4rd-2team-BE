@@ -177,6 +177,8 @@ public class NeighborController {
         neighborService.changeRelationNeighbor(userId,changeUserId);
         return ResponseEntity.noContent().build();
     }
+
+
     // 내가 보낸 신청 취소
     @PostMapping("/batch-cancel")
     public ResponseEntity<Void> cancelRequestNeighbors(
