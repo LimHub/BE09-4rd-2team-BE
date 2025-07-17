@@ -215,8 +215,6 @@ public class NeighborController {
         return ResponseEntity.ok(result);
     }
 
-
-
     // 로그인 정보
     @GetMapping("/saved")
     public ResponseEntity<LoginUserDto> savedNeighbors(@AuthenticationPrincipal String userIdStr) {
