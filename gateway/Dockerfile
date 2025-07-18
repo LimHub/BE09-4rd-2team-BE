@@ -2,7 +2,7 @@ FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
-COPY build/libs/*.jar gateway.jar
+COPY build/libs/*SNAPSHOT.jar gateway.jar
 RUN chmod +x gateway.jar
 
 EXPOSE 8000
