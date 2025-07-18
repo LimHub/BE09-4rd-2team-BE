@@ -200,7 +200,6 @@ public class NeighborController {
         neighborService.blockNeighbors(userId,blockUserIds);
         return ResponseEntity.noContent().build();
     }
-
     // 차단 유저 조회
     @GetMapping("/blocked")
     public ResponseEntity<List<BlockedForMeNeighborDto>> blockedNeighbors(
