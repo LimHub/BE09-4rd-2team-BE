@@ -2,7 +2,7 @@ FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
-COPY build/libs/*.jar user-service.jar
+COPY build/libs/*SNAPSHOT.jar user-service.jar
 
 RUN chmod +x user-service.jar
 
