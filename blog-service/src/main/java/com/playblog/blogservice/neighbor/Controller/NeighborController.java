@@ -185,7 +185,6 @@ public class NeighborController {
     ){
         if (userIdStr == null) throw new RuntimeException("로그인 필요");
         Long userId = Long.valueOf(userIdStr);  // 👈 여기서 안전하게 변환
-
         neighborService.cancelRequestNeighbors(userId,cancelUserIds);
         return ResponseEntity.noContent().build();
     }
