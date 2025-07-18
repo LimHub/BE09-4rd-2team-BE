@@ -188,6 +188,8 @@ public class NeighborController {
         neighborService.cancelRequestNeighbors(userId,cancelUserIds);
         return ResponseEntity.noContent().build();
     }
+
+
     // 유저 차단
     @PostMapping("/batch-block")
     public ResponseEntity<Void> blockNeighbors(
