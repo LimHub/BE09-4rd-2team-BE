@@ -2,9 +2,10 @@ FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
-COPY build/libs/*SNAPSHOT.jar discovery.jar
-RUN chmod +x discovery.jar
+COPY build/libs/*.jar app.jar
+
+RUN chmod +x app.jar
 
 EXPOSE 8761
 
-ENTRYPOINT ["java", "-jar", "discovery.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]

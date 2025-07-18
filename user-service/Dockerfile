@@ -2,10 +2,10 @@ FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
-COPY build/libs/*SNAPSHOT.jar user-service.jar
+COPY build/libs/*.jar app.jar
 
-RUN chmod +x user-service.jar
+RUN chmod +x app.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "user-service.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
