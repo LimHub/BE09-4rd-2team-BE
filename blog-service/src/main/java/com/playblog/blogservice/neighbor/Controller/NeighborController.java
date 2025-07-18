@@ -232,8 +232,6 @@ public class NeighborController {
 
         return ResponseEntity.ok(userInfo);
     }
-
-
     // 해당 유저정보 넘겨주기
     @GetMapping("/by-nickname/{nickname}")
     public ResponseEntity<insertPopup> getUserByNickname(
