@@ -244,5 +244,4 @@ public class NeighborController {
         }
         return ResponseEntity.ok(neighborDtoMapper.toInsertPopup(user));
     }
-
 }
