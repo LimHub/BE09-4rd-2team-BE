@@ -30,6 +30,11 @@ spring:
           filters:
             - RewritePath=/api/blog-service/(?<segment>.*), /$\{segment}
 
+        - id: github-webhook
+          uri: http://localhost:8080  # Jenkins 서버 주소 (보통 8080)
+          predicates:
+            - Path=/github-webhook/**
+
       globalcors:  # 이 들여쓰기로 수정
         corsConfigurations:
           '[/**]':
