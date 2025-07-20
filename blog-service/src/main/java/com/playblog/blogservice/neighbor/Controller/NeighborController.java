@@ -234,8 +234,7 @@ public class NeighborController {
     // 해당 유저정보 넘겨주기
     @GetMapping("/by-nickname/{nickname}")
     public ResponseEntity<insertPopup> getUserByNickname(
-            @PathVariable String nickname) {
-
+            @PathVariable String nickname) {햐
         System.out.println("📌 요청 받은 닉네임: [" + nickname + "]");
         UserInfo user = userInfoRepository.findByNickname(nickname);
         System.out.println(user.toString());
