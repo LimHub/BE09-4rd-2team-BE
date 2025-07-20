@@ -154,7 +154,6 @@ public class NeighborController {
         neighborService.rejectMultipleNeighbors(userId,Ids);
         return ResponseEntity.noContent().build();
     }
-
     // 이웃관계 삭제(이웃에서 아예 삭제)
     @DeleteMapping("/delete")
     public ResponseEntity<Void> rejectAllNeighbors(
