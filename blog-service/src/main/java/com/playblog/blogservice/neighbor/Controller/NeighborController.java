@@ -26,7 +26,6 @@ public class NeighborController {
     private final NeighborDtoMapper neighborDtoMapper;
     private final UserInfoRepository userInfoRepository;
 
-
     // 내가 요청한 이웃(내가 추가)
     @GetMapping("/my-following/added")
     public ResponseEntity<List<MyAddedForMeNeighborDto>> getMyAddedNeighbors(
