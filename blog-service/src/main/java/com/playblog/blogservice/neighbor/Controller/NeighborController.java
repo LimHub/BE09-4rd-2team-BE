@@ -238,7 +238,6 @@ public class NeighborController {
         System.out.println("📌 요청 받은 닉네임: [" + nickname + "]");
         UserInfo user = userInfoRepository.findByNickname(nickname);
         System.out.println(user.toString());
-
         if (user == null) {
             return ResponseEntity.notFound().build();
         }
